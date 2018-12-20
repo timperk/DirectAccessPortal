@@ -1,0 +1,150 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img.map, map area{
+	outline: none;
+}
+
+.graphic-contain {
+    position: relative;
+}
+
+.main-img-contain {
+    width: 100%;
+    height: auto;
+}
+
+.y-box-area {
+    /*position: absolute;
+     max-height: 1251px;
+    height: 100%;
+    max-width: 1400px;
+    width: 100%; */
+}
+
+/* Hover tooltips */
+.field-tip {
+    /* position:relative; 
+    cursor:help; */
+}
+.field-tip .tip-content {
+    position:absolute;
+    top:5%; /* - top padding */
+    right:9999px;
+    width:300px;
+    margin-right:0px; /* width + left/right padding */
+    color:snow;
+    background:#4E4E4E;
+    -webkit-box-shadow:0px 0px 8px rgba(0,0,0,.45);
+       -moz-box-shadow:0px 0px 8px rgba(0,0,0,.45);
+            box-shadow:0px 0px 8px rgba(0,0,0,.45);
+    opacity:0;
+    -webkit-transition:opacity 350ms ease-out;
+       -moz-transition:opacity 350ms ease-out;
+        -ms-transition:opacity 350ms ease-out;
+         -o-transition:opacity 350ms ease-out;
+            transition:opacity 350ms ease-out;
+    padding:1% 2%;
+    z-index: 9999;
+    border-radius: 4px;
+}
+        
+.field-tip:hover .tip-content {
+    opacity:1;
+}
+
+.field-tip:hover .tip-content.bottom-left {
+    bottom: 14%;
+    left: 0;
+    top: inherit;
+}
+
+.field-tip:hover .tip-content.top-left {
+    top:12%;
+    left: 0;
+}
+
+.field-tip:hover .tip-content.top-right {
+    top:12%;
+    right: 0;
+    left: inherit;
+}
+
+.tip-content h2 {
+    color: #fff !important;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.tip-content p {
+    line-height: normal !important;
+}
+
+
+
+.employee-at {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* LIGHTBOX STYLES */
+
+div#html5-watermark {
+		display: none !important; 
+    }
+		
+	div#html5-lightbox-overlay {
+        opacity: 0.8 !important;
+    }
+			
+    div#html5-elem-data-box {
+        display: none !important;
+    }
+    
+    .lightboxcontainer {
+      width:100%;
+      text-align:left;
+    }
+    .lightboxleft {
+      width: 50%;
+      float:left;
+    }
+    .lightboxright {
+      width: 50%;
+      float:left;
+    }
+
+    iframe.full-vid {
+        border: none;
+        width: 100%;
+        margin: 80px auto 0 auto;
+        display: block;
+        max-width: 568px;        
+    }
+
+    .divtext {
+      margin: 10px 36px;
+    }
+    .divtitle {
+        text-align: center;
+        color: #0072C6;
+    }
+    @media (max-width: 800px) {
+      .lightboxleft {
+        width: 100%;
+      }
+      .lightboxright {
+        width: 100%;
+      }
+      .divtext {
+        margin: 12px;
+      }
+    }
+    
